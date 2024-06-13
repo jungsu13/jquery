@@ -20,6 +20,7 @@
     </p>
 
     <script>
+
         // 최대 20, 최소8
         let fontSize = 14
         $('body').css('fontSize',fontSize)
@@ -28,13 +29,17 @@
             if($(this).hasClass('plus')){
                 if(fontSize >=20)return
                 fontSize++
-            }else{
-                fontSize=14
-            }
+
+            }else if($(this).hasClass('minus')){
+                if(fontSize <=8)return
+                fontSize--
+                
+            }else{fontSize=14}
 
             $('.font_size span').text(fontSize)
             $('body').css('fontSize',fontSize)
         })
+
     </script>
     
 </body>

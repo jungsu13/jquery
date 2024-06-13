@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../images/logo.svg" alt="">
+            </div>           
+            <ul class="gnb">
+                <li><a href="#">소개</a></li>
+                <li><a href="#">서비스</a></li>
+                <li><a href="#">가치</a></li>
+                <li><a href="#">홍보</a></li>
+                <li><a href="#">투자</a></li>
+                <li><a href="#">채용</a></li>
+            </ul>  
+            <div class="user"><i class="xi-user"></i></div>         
+        </header> 
+        
+        <main>
+            <div class="slide"><img src="../images/slide_01.jpg" alt=""></div>
+
+            <section>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reiciendis amet aliquid porro velit voluptatibus illum architecto minima obcaecati numquam sint necessitatibus, maiores earum rem placeat vero dolorem sed, optio recusandae? Esse fugiat voluptatibus eius labore quas et molestiae alias eum, voluptate nulla laboriosam dignissimos magnam corporis, ducimus saepe quasi rem! Pariatur labore suscipit earum, error asperiores nihil corporis velit consectetur! Non delectus molestiae error vitae distinctio quaerat nisi fuga quidem, possimus dolorem aliquam quas eos nostrum odit itaque recusandae natus, cum sint quam, iste voluptas omnis repudiandae. Temporibus numquam quasi vitae consequatur pariatur aliquid adipisci dolore aperiam itaque amet? Beatae dicta consectetur eius? Ratione maiores id hic esse consequatur eligendi quos repellat alias, perspiciatis, earum nihil voluptatum libero ducimus expedita aliquam assumenda neque sunt pariatur aspernatur illo molestiae mollitia? Dicta laboriosam magnam suscipit excepturi? Facere, reprehenderit, possimus quisquam aperiam eos nostrum aliquam nobis odit animi illum deserunt ducimus molestiae delectus cupiditate suscipit porro ipsum inventore ratione excepturi. Dolore rem ratione repudiandae alias vero, veritatis quis velit nihil recusandae autem saepe sequi explicabo officia doloribus aut, tempora illo! Culpa dicta fugit dolorum omnis quae asperiores soluta? Maiores dolorem quisquam perspiciatis distinctio et, suscipit fuga eum consequuntur. Libero, magni? Magnam, vero?   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reiciendis amet aliquid porro velit voluptatibus illum architecto minima obcaecati numquam sint necessitatibus, maiores earum rem placeat vero dolorem sed, optio recusandae? Esse fugiat voluptatibus eius labore quas et molestiae alias eum, voluptate nulla laboriosam dignissimos magnam corporis, ducimus saepe quasi rem! Pariatur labore suscipit earum, error asperiores nihil corporis velit consectetur! Non delectus molestiae error vitae distinctio quaerat nisi fuga quidem, possimus dolorem aliquam quas eos nostrum odit itaque recusandae natus, cum sint quam, iste voluptas omnis repudiandae. Temporibus numquam quasi vitae consequatur pariatur aliquid adipisci dolore aperiam itaque amet? Beatae dicta consectetur eius? Ratione maiores id hic esse consequatur eligendi quos repellat alias, perspiciatis, earum nihil voluptatum libero ducimus expedita aliquam assumenda neque sunt pariatur aspernatur illo molestiae mollitia? Dicta laboriosam magnam suscipit excepturi? Facere, reprehenderit, possimus quisquam aperiam eos nostrum aliquam nobis odit animi illum deserunt ducimus molestiae delectus cupiditate suscipit porro ipsum inventore ratione excepturi. Dolore rem ratione repudiandae alias vero, veritatis quis velit nihil recusandae autem saepe sequi explicabo officia doloribus aut, tempora illo! Culpa dicta fugit dolorum omnis quae asperiores soluta? Maiores dolorem quisquam perspiciatis distinctio et, suscipit fuga eum consequuntur. Libero, magni? Magnam, vero?
+                </p>
+            </section>
+        </main>        
+    </div>
+
+    <script>
+
+        $(window).scroll(function(){
+            function logSwap(imgUrl){
+                $('.logo').find('img').attr('src',imgUrl)
+            }
+
+            if($(window).scrollTop()>500){
+                $('header').addClass('small')
+                logoSwap('../images/logo.svg')
+            }
+        })
+    </script>
+
+    
+</body>
+</html>
